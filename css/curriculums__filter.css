@@ -1,0 +1,8 @@
+.box__decor{
+    box-shadow: #3d3d3d -6px 6px 2px;
+}
+
+.filter__curriculums{
+    max-height:480px; 
+    border-radius: 0 0 15px 0;
+}

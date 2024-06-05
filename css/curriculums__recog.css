@@ -1,0 +1,24 @@
+.card:hover{
+    background:#D6DBDF;
+}
+
+.card{
+    transition: 500ms;
+}
+
+.card h4.lead{
+    color: black;
+    text-decoration: none;
+}
+
+.curriculum__diff:hover{
+    text-decoration: none;
+}
+
+.curriculum__diff:hover h4{
+    text-decoration: underline;
+}
+
+.curriculum__diff ul.list-unstyled{
+    color: black;
+}

@@ -1,0 +1,7 @@
+.invalid{
+    border: 2px solid rgb(228, 43, 43);
+}
+
+.invalid-placeholder::placeholder{
+    color: rgb(187, 54, 54);
+}
