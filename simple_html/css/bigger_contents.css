@@ -1,0 +1,41 @@
+.bigger__board{
+    display: flex;
+    background: var(--background-board);
+    height: 480px;
+    border: 1px solid green;
+    margin-bottom: 10px;
+}
+
+.bigger__board__partner__cards{
+    background: var(--background-card);
+    width: 32%;
+    margin: 10px;
+    border: 1px solid blue;
+    height: 100px;
+}
+
+.bigger__board__ceo__cards{
+    background: var(--background-card);
+    width: 24%;
+    height: 460px;
+    margin: 10px;
+    border: 1px solid peru;
+}
+
+.resume__board{
+    background: var(--background-board);
+    display: flex;
+    float: right;
+    width: 75%;
+    height: 480px;
+    border: 1px solid green;
+    margin-bottom: 10px;
+}
+
+.resume__cards{
+    background: var(--background-card);
+    border: 1px solid black;
+    width: 31%;
+    height: 220px;
+    margin: 10px;
+}

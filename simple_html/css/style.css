@@ -1,3 +1,21 @@
+/* EXTERNAL STYLESHEETS EXTERNAL STYLESHEETS */
+@import url(header.css);
+@import url(content.css);
+@import url(bigger_contents.css);
+
+/* VAR CREATION VAR CREATION VAR CREATION VAR CREATION */
+:root{
+    --background-header: #cdd0dc;
+    --background-board: #D4EFDF;
+    --background-card: #76D7C4;
+    --background-body: #ECF0F1;
+    --background-banner: #F2D7D5;
+    --background-filter: #FAD7A0;
+    --cinza: #D7DBDD;
+    --white: #FFFFFF;
+    --azul-claro: #85C1E9
+}
+
 /* HTML STRUCTURE HTML STRUCTURE HTML STRUCTURE */
 *{
     margin: 0px;
@@ -8,14 +26,17 @@
 body{
     /* Only for limitation (se tu tiver testado isso sora hahahah) */
     min-width: 866px;
+    background: var(--background-body);
 }
 
 header{
+    background: var(--background-header);
     border: 1px solid black;
     height: 120px;
 }
 
 footer{
+    background: var(--background-header);
     height: 80px;
     border: 1px solid black;
     clear: both;
@@ -30,94 +51,6 @@ main{
 
 
 /* CLASS CLASS CLASS CLASS CLASS CLASS CLASS CLASS */
-.logo__holder{
-    border: 1px solid red;
-    float: left;
-    position: relative;
-    top: 15px;
-    left: 120px;
-    display: block;
-    width: 140px;
-    height: 90px;
-    text-align: center;
-    line-height: 90px;
-}
-
-.logo__name{
-    border: 1px solid blue;
-    float: left;
-    position: relative;
-    top: 38px;
-    left: 120px;
-    display: block;
-    width: 90px;
-    height: 45px;
-    text-align: center;
-    line-height: 45px;
-}
-
-.navigation__header{
-    position: relative;
-    right: 80px;
-    margin-top: 40px;
-    float: right;
-    border: 1px solid black;
-}
-
-.navigation__header li{
-    padding: 0 10px;
-    display: inline;
-    line-height: 40px;
-}
-
-.banner__content{
-    display: flex;
-    border: 1px solid red;
-    height: 280px;
-    width: 100%;
-    margin: 0px auto;
-    margin-bottom: 10px;
-}
-
-.banner__inner__content{
-    width: 48%;
-    margin: 10px;
-    border: 1px solid purple;
-    height: 260px;
-}
-
-.banner__sample{
-    margin: 0px auto
-}
-
-.bigger__banner__content{
-    height: 360px;
-    display: flex;
-    border: 1px solid orangered;
-    margin-bottom: 10px;
-}
-
-.bigger__board{
-    display: flex;
-    height: 480px;
-    border: 1px solid green;
-    margin-bottom: 10px;
-}
-
-.bigger__board__partner__cards{
-    width: 32%;
-    margin: 10px;
-    border: 1px solid blue;
-    height: 100px;
-}
-
-.bigger__board__ceo__cards{
-    width: 24%;
-    height: 460px;
-    margin: 10px;
-    border: 1px solid peru;
-}
-
 .footer__sample__text{
     border: 1px solid blue;
     padding: 10px;
@@ -127,23 +60,8 @@ main{
     margin-top: 22px;
 }
 
-.resume__board{
-    display: flex;
-    float: right;
-    width: 75%;
-    height: 480px;
-    border: 1px solid green;
-    margin-bottom: 10px;
-}
-
-.resume__cards{
-    border: 1px solid black;
-    width: 31%;
-    height: 220px;
-    margin: 10px;
-}
-
 .lateral__navigation__bar{
+    background: var(--background-filter);
     border: 1px solid orangered;
     width: 24%;
     height: 480px;
