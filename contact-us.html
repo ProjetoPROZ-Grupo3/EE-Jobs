@@ -40,19 +40,19 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href='contact-us.html' target="_blank">CONTATO</a>
+                                <a class="nav-link text-dark" href='contact-us.html'>CONTATO</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="curriculums.html" target="_blank">CURRÍCULOS</a>
+                                <a class="nav-link text-dark" href="curriculums.html">CURRÍCULOS</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href='partners.html' target="_blank">PARCEIRIAS</a>
+                                <a class="nav-link text-dark" href='partners.html'>PARCEIRIAS</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="about-us.html" target="_blank">SOBRE</a>
+                                <a class="nav-link text-dark" href="about-us.html">SOBRE</a>
                             </li>
 
                             <li>
@@ -75,12 +75,16 @@
                         <div class="align-self-center">
                             <h2 class="display-4 px-1">Já fez seu cadastro?</h2>
                             <div class="form-group">
+
+                                <!-- CÓDIGOS JÁ COLOCADOS -->
                                 <input class="form-control mb-1" type="email" id="user-email" placeholder="Digite seu email">
                                 <input class="form-control" type="password" id="user-password" placeholder="Digite sua senha">
                             </div>
                             <div class="d-block text-right">
                                 <span><a class="text-info mr-3" href="">Esqueci minha senha</a></span>
-                                <button class="btn btn-info">Entrar</button>
+
+                                <!-- DEFINIR FUNÇÃO ONCLICK PARA O BOTÃO ENTRAR DO 'fazerCadastro()' -->
+                                <button class="btn btn-info" onclick="">Entrar</button>
                             </div>
                         </div>
                     </div>
@@ -97,12 +101,17 @@
                         <div class="align-self-center">
                             <h2 class="display-4 px-1">Quer cadastrar seu currículo?</h2>
                             <div class="form-group">
+
+                                <!-- CÓDIGOS JÁ COLOCADOS -->
                                 <input class="form-control mb-2" type="text" id="new-user-name" placeholder="Digite seu nome">
                                 <input class="form-control mb-2" type="email" id="new-user-email" placeholder="Digite seu email">
-                                <textarea class="form-control" placeholder="Escreva um pouco sobre você. Entraremos em contato futuramente."></textarea>
+                                <textarea class="form-control" placeholder="Escreva um pouco sobre você. Entraremos em contato futuramente." id="new-user-text"></textarea>
                             </div>
+
                             <div class="d-block text-right">
-                                <button class="btn btn-info">Enviar</button>
+
+                                <!-- DEFINIR FUNÇÃO ONCLICK PARA O BOTÃO ENTRAR DO 'enviarCurriculo()' -->
+                                <button class="btn btn-info" onclick="">Enviar</button>
                             </div>
                         </div>
                     </div>
@@ -125,8 +134,12 @@
                         <div class="align-self-center">
                             <h2 class="display-4 px-1">Quer virar nosso parceiro?</h2>
                             <div class="form-group">
+
+                                <!-- CODIGOS DE ID JÁ COLOCADOS -->
                                 <input class="form-control mb-2" type="text" id="company-name" placeholder="Digite o nome da empresa">
                                 <input class="form-control mb-2" type="email" id="company-email" placeholder="Digite o email para contato">
+
+                                <!-- CODIGO DE ID JÁ COLOCADO -->
                                 <select class="form-control mb-2" id="form-company">
                                     <option>Selecione uma opção</option>
                                     <option>Agronegócio</option>
@@ -143,6 +156,8 @@
                                     <option>Urbanismo</option>
                                     <option>Vendas e Marketing</option>
                                 </select>
+
+                                <!-- CODIGO DE ID JÁ COLOCADO -->
                                 <select class="form-control mb-2" id="form-company">
                                     <option>Escolha uma opção de parceria</option>
                                     <option>Desejo patrocinar o projeto</option>
@@ -152,7 +167,9 @@
                                 </select>
                             </div>
                             <div class="d-block text-right">
-                                <button class="btn btn-info">Enviar</button>
+
+                                <!-- CRIAR FUNÇÃO 'enviarCadastroEmpresa()' -->
+                                <button class="btn btn-info" onclick="">Enviar</button>
                             </div>
                         </div>
                     </div>
