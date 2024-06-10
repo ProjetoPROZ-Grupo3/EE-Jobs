@@ -1,55 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-    </head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-    <body>
-        <header>
-            <!-- Serão estruturas diferentes, isto é somente uma representação -->
-            <span class="logo__holder">
-                LogoIMG
-            </span>
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/b493036c5c.js" crossorigin="anonymous"></script>
 
-            <span class="logo__name">
-                LogoName
-            </span>
-            <!-- Serão estruturas diferentes, isto é somente uma representação -->
+    <!-- NavigationBar Icon --> 
+    <link rel="icon" type="favicon/text" href="./favicon_io/favicon.ico">
 
-            <nav>
-                <ul class="navigation__header">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resumes.html">Curriculos</a></li>
-                    <li><a href="contact-us.html">Contatos</a></li>
-                    <li><a href="partners.html">Parceirias</a></li>
-                    <li><a href="about-us.html">Sobre Nós</a></li>
-                </ul>
-            </nav>
-        </header>
+    <title>E&E-Jobs — Sobre</title>
+  </head>
 
-        <main>
-            <div class="bigger__banner__content">
-                <div class="banner__sample text__center">
-                    Aqui vai um texto e uma imagem
+  <body>
+    <header> <!-- Header's Start -->
+        <nav class="navbar navbar-expand-md navbar-light bg-secondary">
+            <div class="container">
+                <a href="index.html" target="_blank" class="navbar-brand">
+                    <img src="assets/logo_ee_oldcane.png" height="100">
+                    <h1 class="d-none d-lg-inline-block">JOBS</h1>
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation__bar">
+                    <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navigation__bar"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse text-right" id="navigation__bar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href='index.html'>HOME</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href='contact-us.html' target="_blank">CONTATO</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="curriculums.html" target="_blank">CURRÍCULOS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href='partners.html' target="_blank">PARCEIRIAS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about-us.html" target="_blank">SOBRE</a>
+                        </li>
+
+                        <li>
+                            <a class="btn btn-dark" href="#">Entrar</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </header> <!-- Headers End -->
 
-            <div class="bigger__board">
-                <div class="bigger__board__ceo__cards text__center">Fundador 1</div>
-                <div class="bigger__board__ceo__cards text__center">Fundador 2</div>
-                <div class="bigger__board__ceo__cards text__center">Fundador 3</div>
-                <div class="bigger__board__ceo__cards text__center">Fundador 4</div>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-4 col-sm-4 offset-sm-4 col-md-4 offset-md-4 d-md-block col-lg-4 offset-lg-4 py-3 text-center">
+                    <img src="assets/logo_ee_oldcane.png" alt="Simbolo de Mãos Juntas" class="img-fluid">
+                </div>
             </div>
-        </main>
-        
-        <footer>
-            <span class="footer__sample__text">
-                Rodapé
-            </span>
-        </footer>
-    </body>
+            <div class="row">
+                <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-8 offset-md-2 d-md-block col-lg-8 offset-lg-2 py-3">
+                    <p class="lead text-center">
+                        Os e's na logo da E&E-Jobs significam "Elderly & Experienced", que é o público do qual queremos alcançar e ajudar
+                        nessa caminhada de volta ao mercado de trabalho. Já a bengala que está desenhada na logo, representa nosso propósito
+                        como projeto, servir de apoio para os participantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 bg-secondary rounded mb-1 box__decor">
+                <h1 class="text-white mt-1 text-center">
+                    Fundadores da E&E-Jobs
+                </h1>
+    </section>
+
+    <section class="container">
+        <div class="row">
+
+            <!-- Abaixo são os curriculos -->
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 mt-3">
+                <div class="row">
+                    <div class="card col-6 col-sm-6 col-md-6 col-lg-3 offset-0">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img class="img-fluid mb-3 rounded" src="assets/obj_victor.jpeg">
+                            </div>
+                            <h4 class="lead text-center font-weight-bold">Victor Bittencourt</h4>
+                            <p>
+                                <ul class="list-unstyled text-center">
+                                    <li>20 anos, natural SP;</li>
+                                    <li>Principal Fundador;</li>
+                                    <li>Programador Fullstack;</li>
+                                    <li>Técnico Mecatrônico;</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="card col-6 col-sm-6 col-md-6 col-lg-3 offset-0">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img class="img-fluid mt-3 mb-3 rounded" src="assets/obj_samuel.jpeg">
+                            </div>
+                            <h4 class="lead text-center font-weight-bold">Samuel Dias</h4>
+                            <p>
+                                <ul class="list-unstyled text-center">
+                                    <li>20 anos, natural SP;</li>
+                                    <li>Principal Fundador;</li>
+                                    <li>Programador Fullstack;</li>
+                                    <li>Técnico Mecatrônico;</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="card col-6 col-sm-6 col-md-6 col-lg-3 offset-0">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img class="img-fluid  rounded mb-3" src="assets/obj_areane.jpg">
+                            </div>
+                            <h4 class="lead text-center font-weight-bold">Areane Kanawati</h4>
+                            <p>
+                                <ul class="list-unstyled text-center">
+                                    <li>20 anos, natural SP;</li>
+                                    <li>Principal Fundador;</li>
+                                    <li>Programador Fullstack;</li>
+                                    <li>Técnico Mecatrônico;</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card col-6 col-sm-6 col-md-6 col-lg-3 offset-0">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img class="img-fluid  rounded mb-3" src="assets/obj_areane.jpg">
+                            </div>
+                            <h4 class="lead text-center font-weight-bold">Mariane Souza</h4>
+                            <p>
+                                <ul class="list-unstyled text-center">
+                                    <li>20 anos, natural SP;</li>
+                                    <li>Principal Fundador;</li>
+                                    <li>Programador Fullstack;</li>
+                                    <li>Técnico Mecatrônico;</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-10 offset-1">
+                <p class="lead text-center">
+                    Projeto da E&E-Jobs foi realizado em função de um Bootcamp AWS/Front-End da ProzTech. Com duração de 4 meses nos
+                    módulos iniciais. Feito com HTML, CSS, Bootstrap e JavaScript.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-3 footer__bt">
+        <div class="container-fluid footer__background">
+            <div class="row">
+                <div class="col-md-8 py-2">
+                    <p class="">
+                        <a href="">Home</a>
+                        <a href="">Contato</a>
+                        <a href="">Currículos</a>
+                        <a href="">Parceirias</a>
+                        <a href="">Sobre</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 py-2 footer__socials text-center">
+                    <a href="" class="btn btn-outline-light">
+                        <i class="fa-brands fa-square-facebook text-dark"></i>
+                    </a>
+
+                    <a href="" class="btn btn-outline-light">
+                        <i class="fa-brands fa-x-twitter text-dark"></i>
+                    </a>
+
+                    <a href="" class="btn btn-outline-light">
+                        <i class="fa-brands fa-instagram text-dark"></i>
+                    </a>
+
+                    <a href="" class="btn btn-outline-light">
+                        <i class="fa-brands fa-whatsapp text-dark"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>

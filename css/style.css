@@ -1,79 +1,40 @@
-/* EXTERNAL STYLESHEETS EXTERNAL STYLESHEETS */
-@import url(header.css);
-@import url(content.css);
-@import url(bigger_contents.css);
-
-/* VAR CREATION VAR CREATION VAR CREATION VAR CREATION */
-:root{
-    --background-header: #cdd0dc;
-    --background-board: #D4EFDF;
-    --background-card: #76D7C4;
-    --background-body: #ECF0F1;
-    --background-banner: #F2D7D5;
-    --background-filter: #FAD7A0;
-    --cinza: #D7DBDD;
-    --white: #FFFFFF;
-    --azul-claro: #85C1E9
+#home{
+    color: white;
+    background: #6c757d;
 }
 
-/* HTML STRUCTURE HTML STRUCTURE HTML STRUCTURE */
-*{
-    margin: 0px;
-    padding: 0px;
-    text-indent: 0px;
+.horizontal__rule__box{
+    padding: 60px 0;
+    border-bottom: 1px solid dimgray;
 }
 
-body{
-    /* Only for limitation (se tu tiver testado isso sora hahahah) */
-    min-width: 866px;
-    background: var(--background-body);
+.footer__bt{
+    border-top: 1px solid black;
 }
 
-header{
-    background: var(--background-header);
-    border: 1px solid black;
-    height: 120px;
+.footer__socials a{
+    padding-top: 10px;
+    margin: 10px;
 }
 
-footer{
-    background: var(--background-header);
-    height: 80px;
-    border: 1px solid black;
-    clear: both;
+.footer__background{
+    background-color: #6c757d;
 }
 
-main{
-    width: 65%;
-    margin: 0px auto;
-}
-/* ID ID ID ID ID ID ID ID ID ID ID ID ID ID ID */
-
-
-
-/* CLASS CLASS CLASS CLASS CLASS CLASS CLASS CLASS */
-.footer__sample__text{
-    border: 1px solid blue;
-    padding: 10px;
-    width: 50px;
-    display: block;
-    margin: 0px auto;
-    margin-top: 22px;
+.box__decor{
+    box-shadow: #3d3d3d -6px 6px 2px;
 }
 
-.lateral__navigation__bar{
-    background: var(--background-filter);
-    border: 1px solid orangered;
-    width: 24%;
-    height: 480px;
-    float: left;
-    display: flex;
+.filter__curriculums{
+    max-height:480px ; border-radius: 0 0 15px 0;
 }
 
-.filter__sample{
-    margin: 0px auto;
+footer p{
+    padding-left: 30px;
+    padding-top: 10px;
 }
-
-.text__center{
-    align-content: center;
-    text-align: center;
+footer p a{
+    line-height: 40px;
+    margin-left: 20px;
+    color: white;
 }
