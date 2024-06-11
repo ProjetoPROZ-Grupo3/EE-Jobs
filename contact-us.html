@@ -21,66 +21,84 @@
     </head>
 
     <body>
-        <header> <!-- Header's Start -->
+        <header> <!-- Header's Start / INICIO CABEÇALHO -->
+
+            <!-- NAVIGATION BAR / BARRA DE NAVEGAÇÃO -->
             <nav class="navbar navbar-expand-md navbar-light bg-secondary">
                 <div class="container">
-                    <a href="index.html" target="_blank" class="navbar-brand">
+    
+                    <!-- CLICKABLE LOGOTYPE / IMAGEM CLICÁVEL DA LOGO -->
+                    <a href="index.html" class="navbar-brand">
                         <img src="assets/logo_ee_oldcane.png" height="100">
                         <h1 class="d-none d-lg-inline-block">JOBS</h1>
                     </a>
-
+    
+                    <!-- NAVBAR COLLAPSE BUTTON / BOTÃO DE MENU EXPANSIVO (ONLY WORKS ON SMALL DEVICES / SO FUNCIONA EM TELAS MENORES) -->
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation__bar">
                         <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navigation__bar"></span>
                     </button>
-                    
+    
+                    <!-- NAVIGATION BAR DIV / BARRA DE NAVEGAÇÃO MESMO, O BOTÃO EXPANSIVO REVELA-->
                     <div class="collapse navbar-collapse text-right" id="navigation__bar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href='index.html'>HOME</a>
                             </li>
-
+    
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href='contact-us.html' target="_blank">CONTATO</a>
+                                <a class="nav-link text-dark" href='contact-us.html'>CONTATO</a>
                             </li>
-
+    
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="curriculums.html" target="_blank">CURRÍCULOS</a>
+                                <a class="nav-link text-dark" href="curriculums.html">CURRÍCULOS</a>
                             </li>
-
+    
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href='partners.html' target="_blank">PARCEIRIAS</a>
+                                <a class="nav-link text-dark"  href='partners.html'>PARCEIRIAS</a>
                             </li>
-
+    
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="about-us.html" target="_blank">SOBRE</a>
+                                <a class="nav-link text-dark" href="about-us.html">SOBRE</a>
                             </li>
-
+    
                             <li>
                                 <a class="btn btn-dark" href="#">Entrar</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </header> <!-- Headers End -->
+            </nav> 
+            <!-- END OF NAVIGATION BAR / FIM DA BARRA DE NAVEGAÇÃO -->
+    
+        </header> <!-- Headers End / FIM DO CABEÇALHO -->
 
+        <!-- LOGIN SECTION / SEÇÃO DE LOGIN -->
         <section id="home">
             <div class="container">
                 <div class="row">
+
+                    <!-- MAGNIFYING GLASS / ICONE DE LUPA -->
                     <div class="d-none d-lg-block col-lg-4 offset-lg-1">
                         <img class="img-fluid py-3" src="assets/obj_magnifying_glass.png" alt="Lupa com Interrogação">
                     </div>
 
+                    <!-- TITLE AND FORM / TITULO E FORMULARIO -->
                     <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md col-lg-6 offset-lg-0 d-flex my-3">
                         <div class="align-self-center">
+
+                            <!-- TITULO -->
                             <h2 class="display-4 px-1">Já fez seu cadastro?</h2>
+
+                            <!-- OS CÓDIGOS DE ID JÁ ESTÃO INSERIDOS NESSES INPUTS -->
                             <div class="form-group">
                                 <input class="form-control mb-1" type="email" id="user-email" placeholder="Digite seu email">
                                 <input class="form-control" type="password" id="user-password" placeholder="Digite sua senha">
                             </div>
+
+                            <!-- ENTER BUTTON / FALTA DEFINIR O ONCLICK "fazerLogin() no JavaScript" -->
                             <div class="d-block text-right">
                                 <span><a class="text-info mr-3" href="">Esqueci minha senha</a></span>
-                                <button class="btn btn-info">Entrar</button>
+                                <button class="btn btn-info" onclick="fazerLogin()">Entrar</button>
                             </div>
                         </div>
                     </div>
@@ -92,21 +110,28 @@
             <div class="container">
                 <div class="row">
                     
-
+                    <!-- USER SIGN-IN / CADASTRO DO USUARIO -->
                     <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-0 d-flex my-3">
                         <div class="align-self-center">
+
+                            <!-- TITULO DA SEÇÃO -->
                             <h2 class="display-4 px-1">Quer cadastrar seu currículo?</h2>
+
+                            <!-- OS CÓDIGOS DE ID JÁ ESTÃO DEFINIDOS AQUI, SOMENTE NECESSITA FAZER O VINCULO JS -->
                             <div class="form-group">
                                 <input class="form-control mb-2" type="text" id="new-user-name" placeholder="Digite seu nome">
                                 <input class="form-control mb-2" type="email" id="new-user-email" placeholder="Digite seu email">
                                 <textarea class="form-control" placeholder="Escreva um pouco sobre você. Entraremos em contato futuramente."></textarea>
                             </div>
+
+                            <!-- SEND-SIGNIN BUTTON / BOTÃO DE ENVIAR CADASTRO, FALTA FAZER ONCLICK "enviarCadastroUsuario()" -->
                             <div class="d-block text-right">
-                                <button class="btn btn-info">Enviar</button>
+                                <button class="btn btn-info" onclick="enviarCadastroUsuario()">Enviar</button>
                             </div>
                         </div>
                     </div>
 
+                    <!-- WORKER ICON / ICONE DE TRABALHADOR -->
                     <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4 offset-lg-1 d-flex">
                         <img class="img-fluid py-3" src="assets/obj_worker.png" alt="Lupa com Interrogação">
                     </div>
@@ -117,6 +142,8 @@
         <section class="container">
             <div class="container">
                 <div class="row">
+
+                    <!-- COMPANY ICON / ICONE DE EMPRESA -->
                     <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4 d-flex">
                         <img class="img-fluid py-3" src="assets/obj_company.png" alt="Lupa com Interrogação">
                     </div>
@@ -124,6 +151,8 @@
                     <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md col-lg-6 offset-lg-1 d-flex my-3">
                         <div class="align-self-center">
                             <h2 class="display-4 px-1">Quer virar nosso parceiro?</h2>
+
+                            <!-- INPUT DO TIPO SELECT, ELES JÁ POSSUEM ID, SÓ FALTA FAZER VINCULO COM JS -->
                             <div class="form-group">
                                 <input class="form-control mb-2" type="text" id="company-name" placeholder="Digite o nome da empresa">
                                 <input class="form-control mb-2" type="email" id="company-email" placeholder="Digite o email para contato">
@@ -143,7 +172,7 @@
                                     <option>Urbanismo</option>
                                     <option>Vendas e Marketing</option>
                                 </select>
-                                <select class="form-control mb-2" id="form-company">
+                                <select class="form-control mb-2" id="form-intention">
                                     <option>Escolha uma opção de parceria</option>
                                     <option>Desejo patrocinar o projeto</option>
                                     <option>Desejo patrocinar um programa do projeto</option>
@@ -151,8 +180,12 @@
                                     <option>Desejo dar entrada em um programa</option>
                                 </select>
                             </div>
+
+                            <!-- COMPANY SEND-SIGNIN BUTTON / BOTÃO DE ENVIAR CADASTRO EMPRESA -->
                             <div class="d-block text-right">
-                                <button class="btn btn-info">Enviar</button>
+                                
+                                <!-- FALTA COLOCAR ONCLICK DO TIPO "enviarCadastroEmpresa()" no JS -->
+                                <button class="btn btn-info" onclick="enviarCadastroEmpresa()">Enviar</button>
                             </div>
                         </div>
                     </div>
@@ -161,10 +194,13 @@
         </section>
 
         
+            <!-- RODAPÉ -->
         <footer class="mt-3 footer__bt">
             <div class="container-fluid footer__background">
                 <div class="row">
-                    <div class="col-md-8 py-2">
+                    <div class="col-md-8">
+
+                        <!-- SEÇÃO DOS LINKS -->
                         <p class="">
                             <a href="">Home</a>
                             <a href="">Contato</a>
@@ -174,21 +210,22 @@
                         </p>
                     </div>
 
+                    <!-- ICONES DAS REDES SOCIAIS -->
                     <div class="col-md-4 py-2 footer__socials text-center">
                         <a href="" class="btn btn-outline-light">
-                            <i class="fa-brands fa-square-facebook text-dark"></i>
+                            <i class="fa-brands fa-square-facebook text-light"></i>
                         </a>
 
                         <a href="" class="btn btn-outline-light">
-                            <i class="fa-brands fa-x-twitter text-dark"></i>
+                            <i class="fa-brands fa-x-twitter text-light"></i>
                         </a>
 
                         <a href="" class="btn btn-outline-light">
-                            <i class="fa-brands fa-instagram text-dark"></i>
+                            <i class="fa-brands fa-instagram text-light"></i>
                         </a>
 
                         <a href="" class="btn btn-outline-light">
-                            <i class="fa-brands fa-whatsapp text-dark"></i>
+                            <i class="fa-brands fa-whatsapp text-light"></i>
                         </a>
                     </div>
                 </div>
@@ -201,7 +238,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-        <script src="js/user__signin__login__validation.js"></script>   
+
+        <!-- ADICIONAR SCRIPT NOVO LOGO ABAIXO -->
+        <script></script> 
     </body>
 </html>
