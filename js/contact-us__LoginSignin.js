@@ -94,3 +94,14 @@ function companyRegister(){
     cleanInputs('#form-company');
     cleanInputs('#form-intention');
 }
+
+function watchOverLocalStorage(){
+    const objProfile = JSON.parse(localStorage.getItem("actualProfile"))
+    if (objProfile) {
+    }
+
+}
+
+window.addEventListener("beforeunload", (e) => {
+    localStorage.removeItem("actualProfile")
+})
