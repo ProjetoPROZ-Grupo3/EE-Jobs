@@ -114,5 +114,20 @@
                         "Manutenção de Robôs", "Manutenção Mecânica", "Eletromecânica", "Pneumática"
                     ]
             }
-        ]
+        ],
+        
+    "logins" : [
+        {
+            "useremail" : "tulio@proto.com",
+            "userpassword" : "TulioEsFera01!"
+        },
+        {
+            "useremail" : "e&eJobs@administration.proz.com",
+            "userpassword" : "GoldenJobsForever4Us!"
+        },
+        {
+            "useremail" : "pricila@proto.com",
+            "userpassword" : "JanotaNeguinha01!"
+        }
+    ]
 }

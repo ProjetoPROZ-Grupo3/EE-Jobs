@@ -72,41 +72,27 @@
     
         </header> <!-- Headers End / FIM DO CABEÇALHO -->
 
-        <!-- LOGIN SECTION / SEÇÃO DE LOGIN -->
+        <!-- INFO SECTION / INFO SECTION -->
         <section id="home">
             <div class="container">
                 <div class="row">
 
-                    <!-- MAGNIFYING GLASS / ICONE DE LUPA -->
-                    <div class="d-none d-lg-block col-lg-4 offset-lg-1">
-                        <img class="img-fluid py-3" src="assets/obj_magnifying_glass.png" alt="Lupa com Interrogação">
+                    <!-- COMPANY ICON / ICONE DE COMPANHIA -->
+                    <div class="d-none d-lg-block col-lg-5">
+                        <img class="img-fluid py-3" src="assets/obj_company.png" alt="Lupa com Interrogação">
                     </div>
 
-                    <!-- TITLE AND FORM / TITULO E FORMULARIO -->
-                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md col-lg-6 offset-lg-0 d-flex my-3">
+                    <!-- TITLE / TITULO -->
+                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md col-lg-6 offset-lg-1 d-flex my-3">
                         <div class="align-self-center">
 
                             <!-- TITULO -->
-                            <h2 class="display-4 px-1">Já fez seu cadastro?</h2>
-
-                            <!-- OS CÓDIGOS DE ID JÁ ESTÃO INSERIDOS NESSES INPUTS -->
-                            <div class="form-group">
-
-                                <!-- CÓDIGOS JÁ COLOCADOS -->
-                                <input class="form-control mb-1" type="email" id="user-email" placeholder="Digite seu email">
-                                <input class="form-control" type="password" id="user-password" placeholder="Digite sua senha">
-                            </div>
-
-                            <!-- ENTER BUTTON / FALTA DEFINIR O ONCLICK "fazerLogin() no JavaScript" -->
-                            <div class="d-block text-right">
-                                
-                                <!-- Essa span está invisível para o usuário enquanto ele não errar a senha ou o email -->
-                                <!-- Quando o usuário errar, essas duas classes devem ser aplicadas nos inputs "invalid invalid-placeholder" -->
-                                <span class="d-none text-warning mr-5" id="invalid-text-box">Email ou Senha Inválidos</span>
-
-                                <span><a class="text-info mr-3" href="">Esqueci minha senha</a></span>
-                                <button class="btn btn-info" onclick="userLogin()">Entrar</button>
-                            </div>
+                            <h2 class="display-4 px-1">Venha fazer parte!</h2>
+                            <p class="lead text-center">
+                                Deseja fazer parte ou financiar algum projeto em específico? Entre em contato e cadastre sua empresa para fazer parte
+                                de uma das maiores ações direcionadas a realocação de pessoas no mercado de trabalho
+                            </p>
+                            
                         </div>
                     </div>
                 </div>
@@ -116,48 +102,8 @@
         <section class="container horizontal__rule__box">
             <div class="container">
                 <div class="row">
-                    
-                    <!-- USER SIGN-IN / CADASTRO DO USUARIO -->
-                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-5 offset-md-1 col-lg-6 offset-lg-0 d-flex my-3">
-                        <div class="align-self-center">
 
-                            <!-- TITULO DA SEÇÃO -->
-                            <h2 class="display-4 px-1">Quer cadastrar seu currículo?</h2>
-
-                            <!-- OS CÓDIGOS DE ID JÁ ESTÃO DEFINIDOS AQUI, SOMENTE NECESSITA FAZER O VINCULO JS -->
-                            <div class="form-group">
-
-                                <!-- CÓDIGOS JÁ COLOCADOS -->
-                                <input class="form-control mb-2" type="text" id="new-user-name" placeholder="Digite seu nome">
-                                <input class="form-control mb-2" type="email" id="new-user-email" placeholder="Digite seu email">
-                                <textarea class="form-control" id="new-user-introduction" placeholder="Escreva um pouco sobre você. Entraremos em contato futuramente."></textarea>
-                            </div>
-
-                            <!-- SEND-SIGNIN BUTTON / BOTÃO DE ENVIAR CADASTRO, FALTA FAZER ONCLICK "enviarCadastroUsuario()" -->
-                            <div class="d-block text-right">
-                                <button class="btn btn-info" onclick="userRegister()">Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- WORKER ICON / ICONE DE TRABALHADOR -->
-                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4 offset-lg-1 d-flex">
-                        <img class="img-fluid py-3" src="assets/obj_worker.png" alt="Lupa com Interrogação">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="container">
-                <div class="row">
-
-                    <!-- COMPANY ICON / ICONE DE EMPRESA -->
-                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4 d-flex">
-                        <img class="img-fluid py-3" src="assets/obj_company.png" alt="Lupa com Interrogação">
-                    </div>
-
-                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md col-lg-6 offset-lg-1 d-flex my-3">
+                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-5 col-lg-6 offset-md-0 d-flex my-3">
                         <div class="align-self-center">
                             <h2 class="display-4 px-1">Quer virar nosso parceiro?</h2>
 
@@ -170,7 +116,7 @@
 
                                 <!-- CODIGO DE ID JÁ COLOCADO -->
                                 <select class="form-control mb-2" id="form-company">
-                                    <option>Selecione uma opção</option>
+                                    <option>Área de atuação</option>
                                     <option>Agronegócio</option>
                                     <option>Alimentícios</option>
                                     <option>Construção e Manutenção</option>
@@ -202,6 +148,72 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- COMPANY ICON / ICONE DE EMPRESA -->
+                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-6 offset-md-1 col-lg-5 d-flex">
+                        <img class="img-fluid py-5" src="assets/obj_corporation.png" alt="Lupa com Interrogação">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 mt-4">
+                    <h2 class="display-5 text-center">
+                        Visite às nossas Redes Sociais:
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 mt-3">
+                    <div class="row">
+
+                        <div class="card col-sm-12 col-md-4 col-lg-4">
+                            <a href="#">
+                                <div class="card-body">
+                                    <div class="text-center display-4 py-4">
+                                        <i class="fa-brands fa-square-facebook fa-2xl "></i>
+                                        <h3 class="pt-4">Facebook</h3>
+                                        <p class="lead text-center">
+                                            Fique por dentro dos nossos eventos!
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card col-sm-12 col-md-4 col-lg-4">
+                            <a href="#">
+                                <div class="card-body">
+                                    <div class="text-center display-4 py-4">
+                                        <i class="fa-brands fa-linkedin fa-2xl "></i>
+                                        <h3 class="pt-4">LinkedIn</h3>
+                                        <p class="lead text-center">
+                                            Venha interagir com a nossa equipe!
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card col-sm-12 col-md-4 col-lg-4">
+                            <a href="#">
+                                <div class="card-body">
+                                    <div class="text-center display-4 py-4">
+                                        <i class="fa-brands fa-square-instagram fa-2xl "></i>
+                                        <h3 class="pt-4">Instagram</h3>
+                                        <p class="lead text-center">
+                                            Acompanhe as nossas atualizações!
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -211,7 +223,7 @@
         <footer class="mt-3 footer__bt">
             <div class="container-fluid footer__background">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
 
                         <!-- SEÇÃO DOS LINKS -->
                         <p class="">
@@ -224,7 +236,7 @@
                     </div>
 
                     <!-- ICONES DAS REDES SOCIAIS -->
-                    <div class="col-md-4 py-2 footer__socials text-center">
+                    <div class="col-md-5 py-2 footer__socials text-center">
                         <a href="" class="btn btn-outline-light">
                             <i class="fa-brands fa-square-facebook text-light"></i>
                         </a>
