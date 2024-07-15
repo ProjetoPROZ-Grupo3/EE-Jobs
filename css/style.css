@@ -1,3 +1,9 @@
+@import url(footer__styles.css);
+@import url(form__validation.css);
+@import url(curriculums__filter.css);
+@import url(curriculums__link.css);
+@import url(curriculums__recog.css);
+
 #home{
     color: white;
     background: #6c757d;
@@ -28,13 +34,24 @@
 .filter__curriculums{
     max-height:480px; 
     border-radius: 0 0 15px 0;
+
+}
+
+.valid{
+    color: green;
+    background: greenyellow;
+    border: 2px solid green;
+    transition: 500ms;
 }
 
 .invalid{
     border: 2px solid rgb(228, 43, 43);
+    color: darkred;
+    background: rgb(201, 167, 167);
+    transition: 500ms;
 }
 
-.invalid-placeholder::placeholder{
+.invalid::placeholder{
     color: rgb(187, 54, 54);
 }
 

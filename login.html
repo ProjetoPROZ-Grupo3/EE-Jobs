@@ -79,7 +79,7 @@
 
                     <!-- SESSÃO DE LOGIN DO USUARIO -->
                     <div class="col-10 offset-1 col-md-5 offset-1">
-                        <form class="py-5">
+                        <form id="login-form" class="py-5">
 
                             <!-- TÍTULO DE QUER SE CADASTRAR? -->
                             <h2 class="text-center mb-3">
@@ -109,7 +109,7 @@
 
                     <!-- SESSÃO DE CADASTRO -->
                     <div class="col-10 offset-1 col-md-5 offset-1">
-                        <form class="py-5">
+                        <form id="signin-form" class="py-5">
 
                             <!-- TITULO SESSAO DE CADASTRO -->
                             <h2 class="text-center mb-3">
@@ -120,13 +120,13 @@
                             <div class="form-group row">
                                 <label for="email-login" class="col-2 col-form-label">Nome:</label>
                                 <div class="col-10">
-                                    <input type="text" name="name-login" placeholder="Seu nome" class="form-control m-auto">
+                                    <input type="text" name="name-signin" placeholder="Seu nome" class="form-control m-auto">
                                 </div>
 
                                 <!-- SEGUNDO GRUPO DE CADASTRO - SOBRENOME -->
                                 <label for="surname-login" class="col-3 col-md-4 col-lg-3 col-form-label mt-3">Sobrenome:</label>
                                 <div class="col-9 col-md-8 col-lg-9 mt-3">
-                                    <input type="text" name="surname-login" placeholder="Seu sobrenome" class="form-control m-auto">
+                                    <input type="text" name="surname-signin" placeholder="Seu sobrenome" class="form-control m-auto">
                                 </div>
                             </div>
 
@@ -134,7 +134,7 @@
                             <div class="form-group row">
                                 <label for="email-login" class="col-2 col-form-label">Email:</label>
                                 <div class="col-10">
-                                    <input type="email" name="email-login" placeholder="Insira seu email..." class="form-control m-auto">
+                                    <input type="email" name="email-signin" placeholder="Insira seu email..." class="form-control m-auto">
                                 </div>
                             </div>
 
@@ -251,6 +251,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
         <!-- ADICIONAR SCRIPT NOVO LOGO ABAIXO -->
-        <script src="js/contact-us__LoginSignin.js"></script> 
+        <script src="js/login-Validation.js"></script>
     </body>
 </html>

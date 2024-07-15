@@ -22,3 +22,7 @@
 .curriculum__diff ul.list-unstyled{
     color: black;
 }
+
+#listaDeCurriculos {
+    min-height: 480px;
+}

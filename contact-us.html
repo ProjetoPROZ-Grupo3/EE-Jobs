@@ -109,43 +109,47 @@
 
                             <!-- INPUT DO TIPO SELECT, ELES JÁ POSSUEM ID, SÓ FALTA FAZER VINCULO COM JS -->
                             <div class="form-group">
+                                <form id="company-form">
+                                    <!-- CODIGOS DE ID JÁ COLOCADOS -->
+                                    <input class="form-control mb-2 formulario-empresas" type="text" minlenght="4" name="companyName" placeholder="Digite o nome da empresa">
+                                    <input class="form-control mb-2 formulario-empresas" type="email" name="companyEmail" placeholder="Digite o email para contato">
 
-                                <!-- CODIGOS DE ID JÁ COLOCADOS -->
-                                <input class="form-control mb-2" type="text" id="company-name" placeholder="Digite o nome da empresa">
-                                <input class="form-control mb-2" type="email" id="company-email" placeholder="Digite o email para contato">
+                                    <!-- CODIGO DE ID JÁ COLOCADO -->
+                                    <select class="form-control mb-2 formulario-empresas" name="companySector">
+                                        <option value="placeholder">Área de atuação</option>
+                                        <option value="agronegocio">Agronegócio</option>
+                                        <option value="alimenticios">Alimentícios</option>
+                                        <option value="construcaoManutencao">Construção e Manutenção</option>
+                                        <option value="educacao">Educação</option>
+                                        <option value="entretenimento">Entretenimento</option>
+                                        <option value="industrial">Industrial</option>
+                                        <option value="informatica">Informática</option>
+                                        <option value="publicidade">Publicidade</option>
+                                        <option value="servicosTecnicos">Serviços Técnicos</option>
+                                        <option value="saude">Saúde</option>
+                                        <option value="tecnologia">Tecnologia e Informação</option>
+                                        <option value="urbanismo">Urbanismo</option>
+                                        <option value="vendasMarketing">Vendas e Marketing</option>
+                                    </select>
 
-                                <!-- CODIGO DE ID JÁ COLOCADO -->
-                                <select class="form-control mb-2" id="form-company">
-                                    <option>Área de atuação</option>
-                                    <option>Agronegócio</option>
-                                    <option>Alimentícios</option>
-                                    <option>Construção e Manutenção</option>
-                                    <option>Educação</option>
-                                    <option>Entretenimento</option>
-                                    <option>Industrial</option>
-                                    <option>Informática</option>
-                                    <option>Publicidade</option>
-                                    <option>Serviços Técnicos</option>
-                                    <option>Saúde</option>
-                                    <option>Tecnologia e Informação</option>
-                                    <option>Urbanismo</option>
-                                    <option>Vendas e Marketing</option>
-                                </select>
-                                <select class="form-control mb-2" id="form-intention">
-                                    <option>Escolha uma opção de parceria</option>
-                                    <option>Desejo patrocinar o projeto</option>
-                                    <option>Desejo patrocinar um programa do projeto</option>
-                                    <option>Desejo patrocinar um candidato em específico</option>
-                                    <option>Desejo dar entrada em um programa</option>
-                                </select>
+                                    <select class="form-control mb-2 formulario-empresas" name="companyIntention">
+                                        <option value="placeholder">Escolha uma opção de parceria</option>
+                                        <option value="helpTheProject">Desejo patrocinar o projeto</option>
+                                        <option value="helpSpecificProgram">Desejo patrocinar um programa do projeto</option>
+                                        <option value="helpCandidate">Desejo patrocinar um candidato em específico</option>
+                                        <option value="initiateProgram">Desejo dar entrada em um programa</option>
+                                        
+                                    </select>
+                                    
+                                    <div class="d-block text-right">
+                                        <!-- FALTA COLOCAR ONCLICK DO TIPO "enviarCadastroEmpresa()" no JS -->
+                                        <button class="btn btn-info" type="submit" id="submit-company-form">Enviar</button>
+                                    </div>
+                                </form>
                             </div>
 
                             <!-- COMPANY SEND-SIGNIN BUTTON / BOTÃO DE ENVIAR CADASTRO EMPRESA -->
-                            <div class="d-block text-right">
-                                
-                                <!-- FALTA COLOCAR ONCLICK DO TIPO "enviarCadastroEmpresa()" no JS -->
-                                <button class="btn btn-info" onclick="companyRegister()">Enviar</button>
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -265,6 +269,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
         <!-- ADICIONAR SCRIPT NOVO LOGO ABAIXO -->
-        <script src="js/contact-us__LoginSignin.js"></script> 
+        <script src="js/contact-us-Validation.js"></script> 
     </body>
 </html>
